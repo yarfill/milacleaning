@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  background: #fdf2e9;
 }
 
 * {
@@ -19,7 +20,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fdf2e9;
   min-height: 100vh;
 }
 
