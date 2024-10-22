@@ -1,0 +1,159 @@
+html {
+  font-size: 62.5%;
+  background: #fdf2e9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik" sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* HERO */
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  color: #333;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.working-area {
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 4.8rem;
+}
+
+.cities-of-working {
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  background-color: #f28b82;
+  border: #f28b82 solid 1px;
+  font-weight: bold;
+  color: #fdf2e9;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  align-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+  }
+}
+
+.hero-img-box {
+  text-align: center;
+  margin: 0 -32px;
+}
+
+.hero-img-mobile {
+  width: 100%;
+  max-width: 550px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-img-mobile {
+    display: none;
+  }
+}
+
+.hero-img-desktop {
+  display: none;
+  max-height: 650px;
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-img-desktop {
+    display: inline-block;
+  }
+}
+
+.hero-text-box {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-text-box {
+    margin-bottom: 0;
+  }
+}
+
+.recomendation-text {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ionicon {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+.phone-number {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 50px;
+  background-color: #f28b82;
+  border: #f28b82 solid 1px;
+  color: #fdf2e9;
+}
