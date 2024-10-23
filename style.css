@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
 }
+
 @media (max-width: 944px) {
   html {
     font-size: 50%;
@@ -31,6 +32,7 @@ body {
   row-gap: 96px;
   column-gap: 64px;
 }
+
 @media (max-width: 1200px) {
   .grid {
     display: grid;
@@ -38,6 +40,7 @@ body {
     column-gap: 48px;
   }
 }
+
 @media (max-width: 550px) {
   .grid {
     row-gap: 48px;
@@ -47,6 +50,7 @@ body {
 .grid--2--cols {
   grid-template-columns: repeat(2, 1fr);
 }
+
 @media (max-width: 550px) {
   .grid--2--cols {
     grid-template-columns: 1fr;
@@ -109,6 +113,7 @@ body {
   align-items: center;
   align-content: center;
 }
+
 @media only screen and (min-width: 768px) {
   .hero {
     grid-template-columns: 1fr 1fr;
@@ -125,6 +130,7 @@ body {
   width: 100%;
   max-width: 550px;
 }
+
 @media only screen and (min-width: 768px) {
   .hero-img-mobile {
     display: none;
@@ -138,6 +144,7 @@ body {
   aspect-ratio: 2/3;
   object-fit: contain;
 }
+
 @media only screen and (min-width: 768px) {
   .hero-img-desktop {
     display: inline-block;
@@ -147,6 +154,7 @@ body {
 .hero-text-box {
   margin-bottom: 30px;
 }
+
 @media only screen and (min-width: 768px) {
   .hero-text-box {
     margin-bottom: 0;
@@ -231,6 +239,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 550px) {
   .step-img-box:nth-child(2) {
     grid-row: 1;
