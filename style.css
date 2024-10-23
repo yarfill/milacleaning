@@ -157,3 +157,145 @@ main {
   border: #f28b82 solid 1px;
   color: #fdf2e9;
 }
+
+/* SECTION HOW */
+.section-how {
+  padding: 60px;
+}
+
+.subheading {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 0.75px;
+}
+
+.step-number {
+  font-size: 86px;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 12px;
+}
+
+.heading-secondary {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 96px;
+}
+
+.heading-tertiary {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+.step-description {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.step-img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 550px) {
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(24px);
+  }
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  background-color: #fdf2e9;
+  padding-bottom: 60%;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+.step-img {
+  width: 35%;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 80px 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  height: 22px;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.social-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-link:link, .footer-link:visited {
+  text-decoration: none;
+  font-size: 18px;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
