@@ -157,3 +157,19 @@ main {
   border: #f28b82 solid 1px;
   color: #fdf2e9;
 }
+
+.grid--footer {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (min-width: 550px) {
+  .grid-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 550px) {
+  .footer {
+    padding: 40px 0;
+  }
+}
