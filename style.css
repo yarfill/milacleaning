@@ -12,6 +12,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -286,7 +287,13 @@ body {
 .footer {
   padding: 80px 0;
   border-top: 1px solid #eee;
-  background-color: #fff;
+  background-color: black;
+}
+
+@media (max-width: 550px) {
+  .footer {
+    padding: 40px 0;
+  }
 }
 
 .footer-logo {
@@ -317,7 +324,7 @@ body {
 .footer-link:link, .footer-link:visited {
   text-decoration: none;
   font-size: 18px;
-  color: #767676;
+  color: #fff;
   transition: all 0.3s;
 }
 
@@ -334,12 +341,25 @@ body {
   column-gap: 64px;
 }
 
+@media (max-width: 550px) {
+  .grid {
+    row-gap: 47px;
+  }
+}
+
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 550px) {
+  .grid--footer {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer-heading {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
+  color: #ddd;
 }
