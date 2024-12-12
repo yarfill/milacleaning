@@ -34,7 +34,7 @@ body {
   column-gap: 64px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .grid {
     display: grid;
     row-gap: 64px;
@@ -66,12 +66,27 @@ body {
 /* HEADER */
 /***************************/
 
-.header {
+.sticky-nav {
   display: flex;
   align-items: center;
-  padding-left: 124px;
+  padding-left: 50px;
 }
 
+@media (max-width: 1400px) {
+  .sub-navigation {
+        padding-left: 70px;
+      }
+    }
+
+@media (max-width: 768px) {
+  .sub-navigation {
+      padding-left: 40px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      max-width: 768px;
+      }
+    }
 /***************************/
 /* NAVIGATION */
 /***************************/
@@ -83,8 +98,13 @@ body {
   gap: 10px;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
+@media (max-width: 1024px) {
+  .main-nav-list {
+    gap: 20px;
+  }
+}
+
+.main-nav-link {
   display: inline-block;
   text-decoration: none;
   color: #fdf2e9;
@@ -104,10 +124,9 @@ body {
 }
 
 /* STICKY NAVIGATION */
-.sticky-nav .header {
+.sub-navigation {
   position: sticky;
   top: 0;
-  bottom: 0;
   width: 100%;
   height: 65px;
   padding-top: 0;
@@ -117,10 +136,22 @@ body {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.03);
 }
 
+@media (max-width: 1024px) {
+  .sub-navigation {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+ .sub-navigation {
+    width: 100%;
+  }
+}
+
 /*SECTION HERO */
 .heading-primary {
   font-size: 52px;
-  line-height: 1.05;
+  line-height: 1.5;
   margin-bottom: 32px;
   color: #333;
   font-family: "Kanit", sans-serif;
@@ -142,7 +173,6 @@ body {
   border-radius: 50px;
   background-color: #f28b82;
   border: #f28b82 solid 1px;
-  font-weight: bold;
   color: #fdf2e9;
   font-family: "Source Code Pro", monospace;
   font-weight: 700;
@@ -342,13 +372,7 @@ body {
 .footer {
   padding: 80px 0;
   border-top: 1px solid #eee;
-  background-color: black;
-}
-
-@media (max-width: 550px) {
-  .footer {
-    padding: 40px 0;
-  }
+  background-color: #fff;
 }
 
 .footer-logo {
@@ -379,7 +403,7 @@ body {
 .footer-link:link, .footer-link:visited {
   text-decoration: none;
   font-size: 18px;
-  color: #fff;
+  color: #767676;
   transition: all 0.3s;
 }
 
@@ -396,25 +420,12 @@ body {
   column-gap: 64px;
 }
 
-@media (max-width: 550px) {
-  .grid {
-    row-gap: 47px;
-  }
-}
-
 .grid--footer {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-@media (max-width: 550px) {
-  .grid--footer {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1.5fr 1.5fr 1fr;
 }
 
 .footer-heading {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #ddd;
 }
