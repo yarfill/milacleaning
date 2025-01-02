@@ -110,6 +110,7 @@ body {
   display: flex;
   align-items: center;
   height: inherit;
+  justify-content: space-between;
 }
 
 .navigation__list {
@@ -136,6 +137,11 @@ body {
 .navigation__list-item:focus {
   border-radius: 9px;
   background-color: rgba(0, 0, 0, 0.07);
+}
+
+.navigation__phone-icon {
+  height: 30px;
+  width: 30px;
 }
 
 /*SECTION HERO */
