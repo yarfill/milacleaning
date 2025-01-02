@@ -9,13 +9,13 @@
 }
 
 @font-face {
-  font-family: "Nanum Gothic";
-  src: url('fonts/nanum-gothic/NanumGothic-Regular.ttf') format("TrueType");
+  font-family: "Ubuntu";
+  src: url('fonts/ubuntu/Ubuntu-Regular.ttf') format("TrueType");
 }
 
 @font-face {
   font-family: "Kanit";
-  src: url('fonts/kanit/Kanit-Italic.ttf') format("TrueType");
+  src: url('fonts/kanit/Kanit-Bold.ttf') format("TrueType");
 }
 
 html {
@@ -207,7 +207,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 40px;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
